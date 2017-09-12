@@ -17,16 +17,16 @@ First you have to Install & Configure Apache tomcat & Apache Maven on your compu
    
    Open the command prompt and run these command to check whether variables are correctly set or not.
    
-   1. run "catalina" to check tomcat.
-   2. run "mvn -v" to check maven.if you get positive results you're good to go.if not recheck it.
+   1. run `catalina` to check tomcat.
+   2. run `mvn -v` to check maven.if you get positive results you're good to go.if not recheck it.
 
 ***Download and extract my repository in somewhere in your pc***
 Edit client id,app id according to your details.If you're new to facebook app developing, refer my blogpost about [Retrieving User resources from facebook using OAuth](http://magcyber.blogspot.com/2017/05/retrieving-user-resources-from-facebook.html).
 
 After you edited those details, open the command prompt, cd into the facebookFunApp directory and run these commands.
 
-   1. "catalina start" to start tomcat server.
-   2. "mvn clean install" to build up the maven project.after run this command you'll see a directory call "target" inside facebookFunApp directory.copy the facebookFunApp.war file into the "webapps" directory inside the tomcat directory.(or goto http://localhost:8080/ and select Manager App,Enter user name password that you configured on tomcat-users.xml file.click "Choose file" under "war file deploy" and select your war file inside facebookFunApp/target, and hit deploy.)
+   1. `catalina start` to start tomcat server.
+   2. `mvn clean install` to build up the maven project.after run this command you'll see a directory call "target" inside facebookFunApp directory.copy the facebookFunApp.war file into the "webapps" directory inside the tomcat directory.(or goto http://localhost:8080/ and select Manager App,Enter user name password that you configured on tomcat-users.xml file.click "Choose file" under "war file deploy" and select your war file inside facebookFunApp/target, and hit deploy.)
     
    Then you'll be able to access the webbapp from the browser.enter "localhost:8080/facebookFunApp/" and hit enter.
     
